@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação para web Atividade 2</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script type="text/javascript" src="JS/main.js"></script>
+</head>
+
+<header>
+
+    <h1>Calculadora Simples com operadores</h1>  
+
+</header>
+
+
+<body>
+
+    <div class="container">
+        <div class="flex">
+ 
+            <p>Valor 1: <input type="text" id="v1" size="6" value="" onblur="VerificarCampo1()"></p>
+
+            <p>Valor 2: <input type="text" id="v2" size="6" value="" onblur="VerificarCampo2()"></p>
+            <br>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="somar" name="op" onclick="PararOP()">
+                <label for="somar">+</label> 
+                <input type="radio" id="subtrair" name="op" onclick="PararOP()">
+                <label for="subtrair">-</label> 
+                <input type="radio" id="dividir" name="op" onclick="PararOP()">
+                <label for="dividir">/</label> 
+                <input type="radio" id="multiplicar" name="op" onclick="PararOP()">
+                <label for="multiplicar">*</label>
+            </p>
+
+            <p>
+              <input class="botton" type="button" value="Calcular" onclick="calcular()">&nbsp;&nbsp;
+              <input class="botton" type="button" value="Limpar" onclick="limpar()">
+            </p>
+
+            <p>Resultado: <input type="text" id="res" value="0" size="6" readonly> </p>
+        </div>
+    </div>
+<br>
+<div id="erro" class="alert"></div>
+</body>
+
+    <footer>
+
+        <h1>Desenvolvido por: Rafael Garcia</h1>
+
+    </footer>
+</html>
+
+
+
+<!------------------- Trainar JS, após o erro do JS retortar o Value para vazio "" -------------------------> 
